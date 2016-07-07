@@ -45,16 +45,16 @@ class GeoIP2
         $this->config = $config;
         $this->request = $request;
 
-        $cfgStoragePath = $this->config->get('laravel-geoip2::config.storage_path');
+        $cfgStoragePath = $this->config->get('geoip2.storage_path');
         if (empty($cfgStoragePath)) {
             $cfgStoragePath = storage_path('geoip');
         }
 
-        $this->storagePath = realpath($cfgStoragePath);
-        $this->databases = $this->config->get('laravel-geoip2::config.databases');
+        $this->storagePath = $cfgStoragePath;
+        $this->databases = $this->config->get('geoip2.databases');
 
-        $this->userId = $this->config->get('laravel-geoip2::config.user_id');
-        $this->licenseKey = $this->config->get('laravel-geoip2::config.license_key');
+        $this->userId = $this->config->get('geoip2.user_id');
+        $this->licenseKey = $this->config->get('geoip2.license_key');
 
         $this->init();
     }
@@ -72,8 +72,8 @@ class GeoIP2
         }
 
         $this->localhostProvider = new LocalhostProvider(
-            $this->config->get('laravel-geoip2::config.localhost_addresses', []),
-            $this->config->get('laravel-geoip2::config.localhost_raw_data', [])
+            $this->config->get('geoip2.localhost_addresses', []),
+            $this->config->get('geoip2.localhost_raw_data', [])
         );
     }
 

@@ -36,7 +36,7 @@ class GeoIP2Update
             ]
         ));
 
-        $cfgStoragePath = $this->config->get('laravel-geoip2::config.storage_path');
+        $cfgStoragePath = $this->config->get('geoip2.storage_path');
         if (empty($cfgStoragePath)) {
             $cfgStoragePath = storage_path('geoip');
         }
@@ -46,11 +46,11 @@ class GeoIP2Update
             mkdir($cfgStoragePath, 0777, true);
         }
 
-        $this->storagePath = realpath($cfgStoragePath);
-        $this->products = $this->config->get('laravel-geoip2::config.products');
+        $this->storagePath = $cfgStoragePath;
+        $this->products = $this->config->get('geoip2.products');
 
-        $this->userId = $this->config->get('laravel-geoip2::config.user_id');
-        $this->licenseKey = $this->config->get('laravel-geoip2::config.license_key');
+        $this->userId = $this->config->get('geoip2.user_id');
+        $this->licenseKey = $this->config->get('geoip2.license_key');
     }
 
     public function setOutput(OutputInterface $output)

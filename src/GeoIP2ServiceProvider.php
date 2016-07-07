@@ -21,7 +21,8 @@ class GeoIP2ServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('acidreign/laravel-geoip2', null, __DIR__);
+        $configPath = __DIR__ . '/config/geoip2.php';
+        $this->publishes([$configPath => config_path('geoip2.php')]);
     }
 
     /**

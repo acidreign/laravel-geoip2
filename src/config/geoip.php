@@ -7,6 +7,9 @@ return array(
         'country' => 'GeoLite2-Country.mmdb',
     ),
 
+    // Location to store .mmdb files
+    'storage_path' => '',
+
     // User authentication
     'user_id'     => 999999,
     'license_key' => '000000000000',
@@ -35,6 +38,7 @@ return array(
         '240.0.0.0/4',
         '255.255.255.255/32',
     ),
+
     // Replace this raw data with your own location
     'localhost_raw_data' => array(
         'continent' => array(
