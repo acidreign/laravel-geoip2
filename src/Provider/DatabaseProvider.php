@@ -1,9 +1,9 @@
 <?php
-namespace Phirational\LaravelGeoIP2\Provider;
+namespace Acidreign\LaravelGeoIP2\Provider;
 
 use GeoIp2\Database\Reader;
 use GeoIp2\ProviderInterface;
-use Phirational\LaravelGeoIP2\GeoIP2Exception;
+use Acidreign\LaravelGeoIP2\GeoIP2Exception;
 
 class DatabaseProvider implements ProviderInterface
 {

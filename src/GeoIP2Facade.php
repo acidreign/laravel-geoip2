@@ -1,12 +1,12 @@
 <?php
-namespace Phirational\LaravelGeoIP2;
+namespace Acidreign\LaravelGeoIP2;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class GeoIP2Facade
  *
- * @package Phirational\LaravelGeoIP2
+ * @package Acidreign\LaravelGeoIP2
  *
  * @method static \GeoIp2\Model\AnonymousIp    anonymousIp(string $ipAddress = null)
  * @method static \GeoIp2\Model\City           city(string $ipAddress = null)

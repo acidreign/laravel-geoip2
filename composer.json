@@ -1,5 +1,5 @@
 {
-    "name": "phirational/laravel-geoip2",
+    "name": "acidreign/laravel-geoip2",
     "description": "Laravel wrapper for MaxMind GeoIP2",
     "keywords": [
         "laravel",
@@ -10,13 +10,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Marek Viger",
-            "email": "viger@phirational.com"
+            "name": "Dave Hennigar",
+            "email": "dave.hennigar@gmail.com"
         }
     ],
     "support": {
-        "source": "https://github.com/Phirational/laravel-geoip2",
-        "issues": "https://github.com/Phirational/laravel-geoip2/issues"
+        "source": "https://github.com/Acidreign/laravel-geoip2",
+        "issues": "https://github.com/Acidreign/laravel-geoip2/issues"
     },
     "require": {
         "php": ">=5.4.0",
@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Phirational\\LaravelGeoIP2\\": "src/"
+            "Acidreign\\LaravelGeoIP2\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Phirational\\LaravelGeoIP2\\Test\\": "tests/"
+            "Acidreign\\LaravelGeoIP2\\Test\\": "tests/"
         }
     },
     "extra": {

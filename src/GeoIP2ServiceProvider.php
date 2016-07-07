@@ -1,7 +1,9 @@
-<?php namespace Phirational\LaravelGeoIP2;
+<?php
+
+namespace Acidreign\LaravelGeoIP2;
 
 use Illuminate\Support\ServiceProvider;
-use Phirational\LaravelGeoIP2\Console\UpdateCommand;
+use Acidreign\LaravelGeoIP2\Console\UpdateCommand;
 
 class GeoIP2ServiceProvider extends ServiceProvider
 {
@@ -19,7 +21,7 @@ class GeoIP2ServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('phirational/laravel-geoip2', null, __DIR__);
+        $this->package('acidreign/laravel-geoip2', null, __DIR__);
     }
 
     /**
