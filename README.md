@@ -1,4 +1,4 @@
-# GeoIP2 for Laravel
+# GeoIP2 for Laravel 5.2
 
 ## Install
 
