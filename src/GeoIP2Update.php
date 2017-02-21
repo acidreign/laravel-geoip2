@@ -30,7 +30,7 @@ class GeoIP2Update
         $this->config = $config;
         $this->output = new NullOutput();
         $this->guzzle = new Client(array(
-            'base_url' => $this->baseUrl,
+            'base_uri' => $this->baseUrl,
             'defaults' => [
                 'exceptions' => true,
             ]
