@@ -1,5 +1,5 @@
 {
-    "name": "acidreign/laravel-geoip2",
+    "name": "talkative/laravel-geoip2",
     "description": "Laravel wrapper for MaxMind GeoIP2",
     "keywords": [
         "laravel",
@@ -10,18 +10,18 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Dave Hennigar",
-            "email": "dave.hennigar@gmail.com"
+            "name": "Jakub Srsen",
+            "email": "jsrsen@talkative.uk"
         }
     ],
     "support": {
-        "source": "https://github.com/Acidreign/laravel-geoip2",
-        "issues": "https://github.com/Acidreign/laravel-geoip2/issues"
+        "source": "https://github.com/Hornet-Wing/laravel-geoip2",
+        "issues": "https://github.com/Hornet-Wing/laravel-geoip2/issues"
     },
     "require": {
         "php": ">=5.4.0",
         "geoip2/geoip2": "~2.0",
-        "guzzlehttp/guzzle": "~5.1",
+        "guzzlehttp/guzzle": "~6.1",
         "illuminate/config": "~4.1|~5.0",
         "illuminate/http": "~4.1|~5.0",
         "illuminate/support": "~4.1|~5.0"
@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Acidreign\\LaravelGeoIP2\\": "src/"
+            "Talkative\\LaravelGeoIP2\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Acidreign\\LaravelGeoIP2\\Test\\": "tests/"
+            "Talkative\\LaravelGeoIP2\\Test\\": "tests/"
         }
     },
     "extra": {

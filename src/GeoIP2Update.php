@@ -1,5 +1,5 @@
 <?php
-namespace Acidreign\LaravelGeoIP2;
+namespace Talkative\LaravelGeoIP2;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;

@@ -1,9 +1,9 @@
 <?php
-namespace Acidreign\LaravelGeoIP2\Console;
+namespace Talkative\LaravelGeoIP2\Console;
 
 use Illuminate\Config\Repository as Config;
 use Illuminate\Console\Command;
-use Acidreign\LaravelGeoIP2\GeoIP2Update;
+use Talkative\LaravelGeoIP2\GeoIP2Update;
 
 class UpdateCommand extends Command
 {

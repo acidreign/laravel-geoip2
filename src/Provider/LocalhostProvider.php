@@ -1,5 +1,5 @@
 <?php
-namespace Acidreign\LaravelGeoIP2\Provider;
+namespace Talkative\LaravelGeoIP2\Provider;
 
 use GeoIp2\Model\City;
 use GeoIp2\Model\Country;

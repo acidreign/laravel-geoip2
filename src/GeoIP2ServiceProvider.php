@@ -1,9 +1,9 @@
 <?php
 
-namespace Acidreign\LaravelGeoIP2;
+namespace Talkative\LaravelGeoIP2;
 
 use Illuminate\Support\ServiceProvider;
-use Acidreign\LaravelGeoIP2\Console\UpdateCommand;
+use Talkative\LaravelGeoIP2\Console\UpdateCommand;
 
 class GeoIP2ServiceProvider extends ServiceProvider
 {
