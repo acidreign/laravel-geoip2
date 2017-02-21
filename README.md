@@ -2,6 +2,16 @@
 
 ## Installation
 
+0) As it is currently not published to packagist, you first need to reference this repo in the `composer.json` like so:
+``` json
+"repositories": [
+	{
+		"type": "git",
+		"url": "https://github.com/Hornet-Wing/laravel-geoip2"
+	}
+]
+```
+
 1) In order to install run the following composer command:
 
 ``` bash
