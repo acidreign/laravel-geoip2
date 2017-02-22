@@ -140,8 +140,8 @@ return [
                 'names' => ['en' => 'England'],
             ],
             [
-                'geoname_id' => 3333157
-                'iso_code' => 'KEC'
+                'geoname_id' => 3333157,
+                'iso_code' => 'KEC',
                 'names' => ['en' => 'Royal Kensington and Chelsea'],
             ],
         ],
