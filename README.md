@@ -37,3 +37,9 @@ Talkative\LaravelGeoIP2\GeoIP2ServiceProvider::class,
 ``` php
 $ php artisan vendor:publish --provider="Talkative\LaravelGeoIP2\GeoIP2ServiceProvider"
 ```
+
+5) Run the update command to download the latest required databases
+
+``` php
+$ php artisan geoip:update
+```
