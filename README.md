@@ -1,4 +1,6 @@
-# GeoIP2 for Laravel 5.2-3
+# GeoIP2 for Laravel 5.4
+
+##### Note: For Laravel 5.2-5.3 use version tagged 1.1.5 
 
 ## Installation
 

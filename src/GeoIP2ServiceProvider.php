@@ -32,11 +32,11 @@ class GeoIP2ServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['geoip2'] = $this->app->share(function ($app) {
+        $this->app->singleton('geoip2', function ($app) {
             return new GeoIP2($app['config'], $app['request']);
         });
 
-        $this->app['command.geoip2.update'] = $this->app->share(function ($app) {
+        $this->app->singleton('command.geoip2.update', function ($app) {
             return new UpdateCommand($app['config']);
         });
 
