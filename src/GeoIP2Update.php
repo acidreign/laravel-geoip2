@@ -51,6 +51,14 @@ class GeoIP2Update
 
         $this->userId = $this->config->get('geoip2.user_id');
         $this->licenseKey = $this->config->get('geoip2.license_key');
+
+        if (empty($this->userId)) {
+            $this->userId = 999999;
+        }
+
+        if (empty($this->licenseKey)) {
+            $this->licenseKey = '000000000000';
+        }
     }
 
     public function setOutput(OutputInterface $output)
