@@ -1,4 +1,4 @@
-# GeoIP2 for Laravel 5.4
+# GeoIP2 for Laravel 5.4-5.5
 
 ##### Note: For Laravel 5.2-5.3 use version tagged 1.1.5 
 
@@ -19,6 +19,7 @@
 ``` bash
 composer require talkative/laravel-geoip2
 ```
+##### Laravel 5.5 Install skip to step 4.
 
 2) Open your `config/app.php` and add the following to the `providers` array:
 
