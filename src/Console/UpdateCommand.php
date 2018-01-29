@@ -40,12 +40,22 @@ class UpdateCommand extends Command
      *
      * @return void
      */
-    public function fire()
+    public function handle()
     {
         $this->geoIP2Update->setOutput($this->output);
 
         if ($this->geoIP2Update->update()) {
             $this->info('Database files updated successfully!');
         }
+    }
+
+    /**
+     * Execute the console command for older versions of laravel.
+     *
+     * @return void
+     */
+    public function fire()
+    {
+        $this->handle();
     }
 }
